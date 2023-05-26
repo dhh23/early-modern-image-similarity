@@ -35,7 +35,7 @@ pic_list = []
 # Go through the hashes of the images and compare them to each other to find the similar images
 for prev, element in itertools.combinations(hash_image_list, 2):
     diff = element["hash"] - prev["hash"]
-    if diff < cutoff_value and diff > 0:
+    if diff < cutoff_value:
         duplicates = duplicates + 1
         pic_list.append((element["image_file_name"], prev["image_file_name"]))
         print("Similar images: " + str(element["image_file_name"]) + " and " + str(prev["image_file_name"]))
