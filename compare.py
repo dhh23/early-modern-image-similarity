@@ -11,7 +11,7 @@ import itertools
 # Count duplicates just to be sure
 duplicates = 0
 # Get all images from the current directory fro the folder called "sample" and file extensions does not matter ("*")
-images = Path("math-copy").glob('*')
+images = Path("test-images/math-copy").glob('*')
 # Datastructures for different objects for later processing
 # List of images
 image_list = []
